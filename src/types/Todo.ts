@@ -4,5 +4,6 @@ export interface Todo {
   name: string
   dueDate: string
   done: boolean
+  userId?: string
   attachmentUrl?: string
 }

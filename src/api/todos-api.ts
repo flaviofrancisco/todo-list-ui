@@ -27,6 +27,7 @@ export async function createTodo(
       'Authorization': `Bearer ${idToken}`
     }
   })
+  console.log('createTodo response', response)
   return response.data.item
 }
 
@@ -65,6 +66,7 @@ export async function getUploadUrl(
       'Authorization': `Bearer ${idToken}`
     }
   })
+  console.log('get upload url', response)
   return response.data.uploadUrl
 }
 
